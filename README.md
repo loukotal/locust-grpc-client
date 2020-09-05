@@ -86,6 +86,13 @@ class ApiUser(GrpcUser):
         self.client.hello_world.SayHello(id='1', metadata=[('auth', 'token')])
 ```
 
+#### B.3 Run locust
+- Run `locust locustfile.py`
+It will show a url, where you can setup number of users etc.
+or you can run it headless using
+- `locust locustfile.py --headless`
+
+
 ## Problems & TODOs
 - [ ] Using custom messages in requests is not tested yet
 
